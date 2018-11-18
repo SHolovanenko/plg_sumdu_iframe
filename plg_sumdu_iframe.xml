@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.1" type="plugin" group="content">
+	<name>plg_sumdu_iframe</name>
+	<author>Sergei Holovanenko</author>
+	<creationDate>November 2018</creationDate>
+	<copyright>Public copyright license</copyright>
+	<license>GNU General Public License version 2 or later</license>
+	<authorEmail>serhii.holovanenko@gmail.com</authorEmail>
+	<!--<authorUrl>www.localhost</authorUrl>-->
+	<version>1.0.0</version>
+	<description>PLG_SUMDU_IFRAME</description>
+	<files>
+		<filename plugin="plg_sumdu_iframe">plg_sumdu_iframe.php</filename>
+	</files>
+	<languages>
+		<language tag="en-GB">en-GB.plg_sumdu_iframe.ini</language>
+		<language tag="en-GB">en-GB.plg_sumdu_iframe.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+
+			<fieldset name="size">
+				<field name="width" type="text"
+					default="560"
+					description="JFIELD_PLG_SUMDU_IFRAME_WIDTH"
+					label="WIDTH"
+					size="4"
+				/>
+
+				<field name="height" type="text"
+					default="315"
+					description="JFIELD_PLG_SUMDU_IFRAME_HEIGHT"
+					label="HEIGHT"
+					size="4"
+				/>
+
+			</fieldset>
+
+			<fieldset name="params">
+				<field name="additional_params" type="text"
+					default="style='border: 0'"
+					description="JFIELD_PLG_SUMDU_IFRAME_ADITIONALPARAMS"
+					label="PARAMS"
+					size="4"
+				/>
+			</fieldset>
+
+		</fields>
+	</config>
+</extension>
